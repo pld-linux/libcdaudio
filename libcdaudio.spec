@@ -9,6 +9,7 @@ Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://www.linuxberg.ps.pl/files/console/dev/%{name}-%{version}.tar.gz
+# Source0-md5:	a6a2939cb762e930ba8971f8539f76da
 URL:		http://cdcd.undergrid.net/libcdaudio/
 BuildRequires:	autoconf
 BuildRequires:	automake
