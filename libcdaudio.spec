@@ -5,15 +5,19 @@ Summary(pl):	Biblioteka funkcji steruj±cych odtwarzaniem muzycznych p³yt CD
 Summary(sk):	Kni¾nica funkcií pre ovládanie prehrávaèov zvukových CD-ROM
 Name:		libcdaudio
 Version:	0.99.4
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries
 Source0:	http://www.linuxberg.ps.pl/files/console/dev/%{name}-%{version}.tar.gz
 # Source0-md5:	a6a2939cb762e930ba8971f8539f76da
+Patch0:		%{name}-am18.patch
 URL:		http://cdcd.undergrid.net/libcdaudio/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		specflags	-fomit-frame-pointer
 
 %description
 libcdaudio is a library designed to provide functions to control
@@ -50,7 +54,7 @@ Summary(it):	File header e librerie per lo sviluppo con libcdaudio
 Summary(pl):	Biblioteki i pliki nag³ówkowe libcdaudio
 Summary(sk):	Hlavièkové súbory a kni¾nice pre vývoj s libcdaudio
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 The libcdaudio-devel package provides the header files and libraries
@@ -79,7 +83,7 @@ Summary(it):	Librerie statiche per lo sviluppo con libcdaudio
 Summary(pl):	Biblioteka statyczna libcdaudio
 Summary(sk):	Statické kni¾nice pre vývoj s libcdaudio
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 The libcdaudio-static package provides static library needed for
@@ -100,15 +104,19 @@ s pou¾itím libcdaudio.
 %setup -q
 
 %build
-cp -f %{_datadir}/automake/install-sh .
-cp -f %{_datadir}/automake/config.sub .
+%{__libtoolize}
+%{__aclocal}
 %{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
-%{__make} CFLAGS="%{rpmcflags} %{!?debug:-fomit-frame-pointer}"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -122,11 +130,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/libcdaudio-config
+%attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
-%{_libdir}/lib*.so
-%{_includedir}/*
-%{_aclocaldir}/*
+%{_includedir}/*.h
+%{_aclocaldir}/libcdaudio.m4
 
 %files static
 %defattr(644,root,root,755)
