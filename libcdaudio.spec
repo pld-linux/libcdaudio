@@ -11,6 +11,7 @@ Group:		Libraries
 Source0:	http://www.linuxberg.ps.pl/files/console/dev/%{name}-%{version}.tar.gz
 URL:		http://cdcd.undergrid.net/libcdaudio/
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -98,6 +99,8 @@ s pou¾itím libcdaudio.
 %setup -q
 
 %build
+cp -f %{_datadir}/automake/install-sh .
+cp -f %{_datadir}/automake/config.sub .
 %{__autoconf}
 %configure
 %{__make} CFLAGS="%{rpmcflags} %{!?debug:-fomit-frame-pointer}"
