@@ -5,7 +5,7 @@ Summary(pl):	Biblioteka funkcji steruj±cych odtwarzaniem muzycznych p³yt CD
 Summary(sk):	Kni¾nica funkcií pre ovládanie prehrávaèov zvukových CD-ROM
 Name:		libcdaudio
 Version:	0.99.4
-Release:	3
+Release:	4
 License:	GPL
 Group:		Libraries
 Source0:	http://www.linuxberg.ps.pl/files/console/dev/%{name}-%{version}.tar.gz
@@ -102,6 +102,7 @@ s pou¾itím libcdaudio.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
