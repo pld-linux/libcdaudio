@@ -1,4 +1,6 @@
+# Conditional build:
 %bcond_without	static_libs	# don't build static library
+#
 Summary:	A library of functions for controlling audio CD-ROM players
 Summary(fr):	Une bibliothèque pour le contrôle des lecteurs de CD-ROMS audio
 Summary(it):	Una libreria di funzioni per controllare i lettori di CD-AUDIO
