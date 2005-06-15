@@ -1,4 +1,4 @@
-%bcond_without	static	# don't build static library
+%bcond_without	static_libs	# don't build static library
 Summary:	A library of functions for controlling audio CD-ROM players
 Summary(fr):	Une bibliothèque pour le contrôle des lecteurs de CD-ROMS audio
 Summary(it):	Una libreria di funzioni per controllare i lettori di CD-AUDIO
@@ -112,7 +112,7 @@ s pou¾itím libcdaudio.
 %{__autoheader}
 %{__automake}
 %configure \
-	%{!?with_static:--disable-static}
+	%{!?with_static_libs:--disable-static}
 %{__make}
 
 %install
@@ -139,7 +139,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*.h
 %{_aclocaldir}/libcdaudio.m4
 
-%if %{with static}
+%if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/lib*.a
