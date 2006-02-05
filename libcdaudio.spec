@@ -7,14 +7,13 @@ Summary(it):	Una libreria di funzioni per controllare i lettori di CD-AUDIO
 Summary(pl):	Biblioteka funkcji steruj±cych odtwarzaniem muzycznych p³yt CD
 Summary(sk):	Kni¾nica funkcií pre ovládanie prehrávaèov zvukových CD-ROM
 Name:		libcdaudio
-Version:	0.99.4
-Release:	4
+Version:	0.99.12p2
+Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://www.linuxberg.ps.pl/files/console/dev/%{name}-%{version}.tar.gz
-# Source0-md5:	a6a2939cb762e930ba8971f8539f76da
-Patch0:		%{name}-am18.patch
-URL:		http://cdcd.undergrid.net/libcdaudio/
+Source0:	http://dl.sourceforge.net/libcdaudio/%{name}-%{version}.tar.gz
+# Source0-md5:	15de3830b751818a54a42899bd3ae72c
+URL:		http://libcdaudio.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -105,7 +104,6 @@ s pou¾itím libcdaudio.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__libtoolize}
