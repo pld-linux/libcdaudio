@@ -138,6 +138,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/lib*.la
 %{_includedir}/*.h
 %{_aclocaldir}/libcdaudio.m4
+%{_pkgconfigdir}/*.pc
 
 %if %{with static_libs}
 %files static
