@@ -2,10 +2,10 @@
 %bcond_without	static_libs	# don't build static library
 #
 Summary:	A library of functions for controlling audio CD-ROM players
-Summary(fr):	Une bibliothËque pour le contrÙle des lecteurs de CD-ROMS audio
-Summary(it):	Una libreria di funzioni per controllare i lettori di CD-AUDIO
-Summary(pl):	Biblioteka funkcji steruj±cych odtwarzaniem muzycznych p≥yt CD
-Summary(sk):	Kniænica funkciÌ pre ovl·danie prehr·vaËov zvukov˝ch CD-ROM
+Summary(fr.UTF-8):   Une biblioth√®que pour le contr√¥le des lecteurs de CD-ROMS audio
+Summary(it.UTF-8):   Una libreria di funzioni per controllare i lettori di CD-AUDIO
+Summary(pl.UTF-8):   Biblioteka funkcji sterujƒÖcych odtwarzaniem muzycznych p≈Çyt CD
+Summary(sk.UTF-8):   Kni≈ænica funkci√≠ pre ovl√°danie prehr√°vaƒçov zvukov√Ωch CD-ROM
 Name:		libcdaudio
 Version:	0.99.12p2
 Release:	1
@@ -26,35 +26,35 @@ libcdaudio is a library designed to provide functions to control
 operation of a CD-ROM when playing audio CDs. It also contains
 functions for CDDB and CD Index lookup.
 
-%description -l fr
-libcdaudio est une bibliothËque pour dÈvelopper des lecteurs de CDs.
-Elle comprend le jeu de commandes de base pour contrÙler la lecture
-des CDs ainsi que des fonctions d'accËs ‡ CDDB, ‡ CD index et Cover
+%description -l fr.UTF-8
+libcdaudio est une biblioth√®que pour d√©velopper des lecteurs de CDs.
+Elle comprend le jeu de commandes de base pour contr√¥ler la lecture
+des CDs ainsi que des fonctions d'acc√®s √† CDDB, √† CD index et Cover
 Art Index.
 
-%description -l it
+%description -l it.UTF-8
 libcdaudio e' un librerie per lo sviluppo di lettori di CD audio che
 include un set base di comandi per controllare le operazioni del
 lettore CD-ROM cosi' come funzioni per accedere ai CDDB, i CD indice,
 i cd di cover art.
 
-%description -l pl
-libcdaudio jest bibliotek± zapewniaj±c± funkcje kontroluj±ce dzia≥anie
-CD-ROMu podczas odtwarzania p≥yt muzycznych. Wspiera rÛwnieø zapytania
+%description -l pl.UTF-8
+libcdaudio jest bibliotekƒÖ zapewniajƒÖcƒÖ funkcje kontrolujƒÖce dzia≈Çanie
+CD-ROMu podczas odtwarzania p≈Çyt muzycznych. Wspiera r√≥wnie≈º zapytania
 CDDB i CD Index.
 
-%description -l sk
-libcdaudio je kniænica pre v˝voj CD prehr·vaËov, obsahuj˙ca z·kladn˙
-sadu prÌkazov pre ovl·danie CD-ROM jednotky, ako aj funkcie pre
-prÌstup k CDDB, CD indexu a indexu obalov.
+%description -l sk.UTF-8
+libcdaudio je kni≈ænica pre v√Ωvoj CD prehr√°vaƒçov, obsahuj√∫ca z√°kladn√∫
+sadu pr√≠kazov pre ovl√°danie CD-ROM jednotky, ako aj funkcie pre
+pr√≠stup k CDDB, CD indexu a indexu obalov.
 
 %package devel
 Summary:	Header files and libraries for libcdaudio development
-Summary(cs):	Knihovny a hlaviËkovÈ soubory pro v˝voj s libcdaudio
-Summary(fr):	Fichiers en-tÍte et bibliothËques de dÈveloppement pour libcdaudio
-Summary(it):	File header e librerie per lo sviluppo con libcdaudio
-Summary(pl):	Biblioteki i pliki nag≥Ûwkowe libcdaudio
-Summary(sk):	HlaviËkovÈ s˙bory a kniænice pre v˝voj s libcdaudio
+Summary(cs.UTF-8):   Knihovny a hlaviƒçkov√© soubory pro v√Ωvoj s libcdaudio
+Summary(fr.UTF-8):   Fichiers en-t√™te et biblioth√®ques de d√©veloppement pour libcdaudio
+Summary(it.UTF-8):   File header e librerie per lo sviluppo con libcdaudio
+Summary(pl.UTF-8):   Biblioteki i pliki nag≈Ç√≥wkowe libcdaudio
+Summary(sk.UTF-8):   Hlaviƒçkov√© s√∫bory a kni≈ænice pre v√Ωvoj s libcdaudio
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -62,28 +62,28 @@ Requires:	%{name} = %{version}-%{release}
 The libcdaudio-devel package provides the header files and libraries
 needed for libcdaudio development.
 
-%description devel -l fr
+%description devel -l fr.UTF-8
 Le paquetage libcdaudio-devel fournit les ent^etes pour utiliser cette
-bibliothËque.
+biblioth√®que.
 
-%description devel -l it
+%description devel -l it.UTF-8
 Il pacchetto libcdaudio-devel contiene i file header e le librerie
 necessarie lo sviluppo con libcdaudio.
 
-%description devel -l pl
-Biblioteki i pliki nag≥Ûwkowe libcdaudio.
+%description devel -l pl.UTF-8
+Biblioteki i pliki nag≈Ç√≥wkowe libcdaudio.
 
-%description devel -l sk
-BalÌk libcdaudio-devel poskytuje hlaviËkovÈ s˙bory a kniænice potrebnÈ
-pre v˝voj s pouæitÌm libcdaudio.
+%description devel -l sk.UTF-8
+Bal√≠k libcdaudio-devel poskytuje hlaviƒçkov√© s√∫bory a kni≈ænice potrebn√©
+pre v√Ωvoj s pou≈æit√≠m libcdaudio.
 
 %package static
 Summary:	libcdaudio static library
-Summary(cs):	StatickÈ knihovny pro v˝voj s libcdaudio
-Summary(fr):	BibliothËques statiques de dÈveloppement pour libcdaudio
-Summary(it):	Librerie statiche per lo sviluppo con libcdaudio
-Summary(pl):	Biblioteka statyczna libcdaudio
-Summary(sk):	StatickÈ kniænice pre v˝voj s libcdaudio
+Summary(cs.UTF-8):   Statick√© knihovny pro v√Ωvoj s libcdaudio
+Summary(fr.UTF-8):   Biblioth√®ques statiques de d√©veloppement pour libcdaudio
+Summary(it.UTF-8):   Librerie statiche per lo sviluppo con libcdaudio
+Summary(pl.UTF-8):   Biblioteka statyczna libcdaudio
+Summary(sk.UTF-8):   Statick√© kni≈ænice pre v√Ωvoj s libcdaudio
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -91,16 +91,16 @@ Requires:	%{name}-devel = %{version}-%{release}
 The libcdaudio-static package provides static library needed for
 libcdaudio development.
 
-%description static -l it
+%description static -l it.UTF-8
 Il pacchetto libcdaudio-static contiene le librerie statiche
 necessarie lo sviluppo con libcdaudio.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna libcdaudio.
 
-%description static -l sk
-BalÌk libcdaudio-static poskytuje statickÈ kniænice potrebnÈ pre v˝voj
-s pouæitÌm libcdaudio.
+%description static -l sk.UTF-8
+Bal√≠k libcdaudio-static poskytuje statick√© kni≈ænice potrebn√© pre v√Ωvoj
+s pou≈æit√≠m libcdaudio.
 
 %prep
 %setup -q
