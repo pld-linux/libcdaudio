@@ -2,10 +2,10 @@
 %bcond_without	static_libs	# don't build static library
 #
 Summary:	A library of functions for controlling audio CD-ROM players
-Summary(fr.UTF-8):   Une bibliothèque pour le contrôle des lecteurs de CD-ROMS audio
-Summary(it.UTF-8):   Una libreria di funzioni per controllare i lettori di CD-AUDIO
-Summary(pl.UTF-8):   Biblioteka funkcji sterujących odtwarzaniem muzycznych płyt CD
-Summary(sk.UTF-8):   Knižnica funkcií pre ovládanie prehrávačov zvukových CD-ROM
+Summary(fr.UTF-8):	Une bibliothèque pour le contrôle des lecteurs de CD-ROMS audio
+Summary(it.UTF-8):	Una libreria di funzioni per controllare i lettori di CD-AUDIO
+Summary(pl.UTF-8):	Biblioteka funkcji sterujących odtwarzaniem muzycznych płyt CD
+Summary(sk.UTF-8):	Knižnica funkcií pre ovládanie prehrávačov zvukových CD-ROM
 Name:		libcdaudio
 Version:	0.99.12p2
 Release:	1
@@ -50,11 +50,11 @@ prístup k CDDB, CD indexu a indexu obalov.
 
 %package devel
 Summary:	Header files and libraries for libcdaudio development
-Summary(cs.UTF-8):   Knihovny a hlavičkové soubory pro vývoj s libcdaudio
-Summary(fr.UTF-8):   Fichiers en-tête et bibliothèques de développement pour libcdaudio
-Summary(it.UTF-8):   File header e librerie per lo sviluppo con libcdaudio
-Summary(pl.UTF-8):   Biblioteki i pliki nagłówkowe libcdaudio
-Summary(sk.UTF-8):   Hlavičkové súbory a knižnice pre vývoj s libcdaudio
+Summary(cs.UTF-8):	Knihovny a hlavičkové soubory pro vývoj s libcdaudio
+Summary(fr.UTF-8):	Fichiers en-tête et bibliothèques de développement pour libcdaudio
+Summary(it.UTF-8):	File header e librerie per lo sviluppo con libcdaudio
+Summary(pl.UTF-8):	Biblioteki i pliki nagłówkowe libcdaudio
+Summary(sk.UTF-8):	Hlavičkové súbory a knižnice pre vývoj s libcdaudio
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -79,11 +79,11 @@ pre vývoj s použitím libcdaudio.
 
 %package static
 Summary:	libcdaudio static library
-Summary(cs.UTF-8):   Statické knihovny pro vývoj s libcdaudio
-Summary(fr.UTF-8):   Bibliothèques statiques de développement pour libcdaudio
-Summary(it.UTF-8):   Librerie statiche per lo sviluppo con libcdaudio
-Summary(pl.UTF-8):   Biblioteka statyczna libcdaudio
-Summary(sk.UTF-8):   Statické knižnice pre vývoj s libcdaudio
+Summary(cs.UTF-8):	Statické knihovny pro vývoj s libcdaudio
+Summary(fr.UTF-8):	Bibliothèques statiques de développement pour libcdaudio
+Summary(it.UTF-8):	Librerie statiche per lo sviluppo con libcdaudio
+Summary(pl.UTF-8):	Biblioteka statyczna libcdaudio
+Summary(sk.UTF-8):	Statické knižnice pre vývoj s libcdaudio
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
