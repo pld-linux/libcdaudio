@@ -9,7 +9,7 @@ Summary(sk.UTF-8):	Knižnica funkcií pre ovládanie prehrávačov zvukových CD
 Name:		libcdaudio
 Version:	0.99.12p2
 Release:	1
-License:	GPL
+License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/libcdaudio/%{name}-%{version}.tar.gz
 # Source0-md5:	15de3830b751818a54a42899bd3ae72c
