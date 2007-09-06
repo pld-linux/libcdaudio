@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	Biblioteka funkcji sterujących odtwarzaniem muzycznych płyt
 Summary(sk.UTF-8):	Knižnica funkcií pre ovládanie prehrávačov zvukových CD-ROM
 Name:		libcdaudio
 Version:	0.99.12p2
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/libcdaudio/%{name}-%{version}.tar.gz
