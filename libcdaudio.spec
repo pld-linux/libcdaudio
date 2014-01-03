@@ -9,11 +9,12 @@ Summary(pl.UTF-8):	Biblioteka funkcji sterujących odtwarzaniem muzycznych płyt
 Summary(sk.UTF-8):	Knižnica funkcií pre ovládanie prehrávačov zvukových CD-ROM
 Name:		libcdaudio
 Version:	0.99.12p2
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/libcdaudio/%{name}-%{version}.tar.gz
 # Source0-md5:	15de3830b751818a54a42899bd3ae72c
+Patch0:		deansi.patch
 URL:		http://libcdaudio.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -105,6 +106,7 @@ s použitím libcdaudio.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -130,6 +132,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%attr(755,root,root) %ghost %{_libdir}/lib*.so.?
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
