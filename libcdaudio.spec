@@ -12,7 +12,7 @@ Version:	0.99.12p2
 Release:	3
 License:	LGPL
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/libcdaudio/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/libcdaudio/%{name}-%{version}.tar.gz
 # Source0-md5:	15de3830b751818a54a42899bd3ae72c
 Patch0:		deansi.patch
 URL:		http://libcdaudio.sourceforge.net/
