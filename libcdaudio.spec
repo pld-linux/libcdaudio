@@ -10,13 +10,13 @@ Summary(sk.UTF-8):	Knižnica funkcií pre ovládanie prehrávačov zvukových CD
 Name:		libcdaudio
 Version:	0.99.12p2
 Release:	3
-License:	LGPL
+License:	LGPL v2+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/libcdaudio/%{name}-%{version}.tar.gz
 # Source0-md5:	15de3830b751818a54a42899bd3ae72c
 Patch0:		deansi.patch
 URL:		http://libcdaudio.sourceforge.net/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -132,20 +132,21 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %ghost %{_libdir}/lib*.so.1
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
+%doc AUTHORS ChangeLog NEWS README TODO
+%attr(755,root,root) %{_libdir}/libcdaudio.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libcdaudio.so.1
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/libcdaudio-config
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/*.h
+%attr(755,root,root) %{_libdir}/libcdaudio.so
+%{_libdir}/libcdaudio.la
+%{_includedir}/cdaudio.h
 %{_aclocaldir}/libcdaudio.m4
-%{_pkgconfigdir}/*.pc
+%{_pkgconfigdir}/libcdaudio.pc
 
 %if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libcdaudio.a
 %endif
