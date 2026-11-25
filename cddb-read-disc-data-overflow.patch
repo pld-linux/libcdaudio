@@ -1,0 +1,13 @@
+# CVE-2008-5030: cddb_read_disc_data() reads 512 bytes into a 256 byte buffer
+# https://sources.debian.org/src/libcdaudio/0.99.12p2-16/debian/patches/02-cddb-bufferoverflow.patch/
+--- libcdaudio-0.99.12p2/src/cddb.c.orig
++++ libcdaudio-0.99.12p2/src/cddb.c
+@@ -1679,7 +1679,7 @@ cddb_read_disc_data(int cd_desc, struct 
+       free(file);
+ 	 
+       while(!feof(cddb_data)) {
+-	fgets(inbuffer, 512, cddb_data);			   
++	fgets(inbuffer, 256, cddb_data);
+ 	cddb_process_line(inbuffer, data);
+       }
+ 	 
